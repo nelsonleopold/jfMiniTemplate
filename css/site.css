@@ -30,7 +30,19 @@ main>.container {
 }
 
 .bootstrap-tech-icon {
-    font-size: 6rem;
+    background-color: var(--nl-light-color);
+}
+
+.javascript-tech-icon {
+    background-color: var(--nl-light-color);
+}
+
+.html5-tech-icon {
+    background-color: var(--nl-light-color);
+}
+
+.css3-tech-icon {
+    background-color: var(--nl-light-color);
 }
 
 .social-icons>a {
