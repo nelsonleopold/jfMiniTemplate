@@ -65,7 +65,15 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <button id="btnDisplayMessage" onclick="displayMessage()" class="btn btn-primary">Display Message</button>
+            <div>
+                <input type="text" name="" id="message" placeholder="Enter A Message">
+            </div>
+            <div class="mt-5">
+                <button id="btnDisplayMessage" class="btn btn-primary">Display Message</button>
+            </div>
+            <div id="results" class="message mt-5">
+                <!-- My message will go here -->
+            </div>
         </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark text-light sticky-footer">
@@ -102,7 +110,7 @@
     <script src="/js/site.js"></script>
 
     <script>
-        document.getElementById("btnDisplayMessage").addEventListener("click", displayMessage);
+        document.getElementById("btnDisplayMessage").addEventListener("click", getMessage);
     </script>
 
 </body>
