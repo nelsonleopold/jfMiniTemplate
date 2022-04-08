@@ -65,14 +65,22 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <div>
-                <input type="text" name="" id="message" placeholder="Enter A Message">
+            <h1>TO DO LIST:</h1>
+            <div class="row align-items-end">
+                <div class="col">
+                    <label for="txtMessage" class="form-label">Item</label>
+                    <input type="text" name="txtMessage" class="form-control" id="txtMessage"
+                        onfocus="this.placeholder=''" placeholder="Write Task Here">
+                </div>
+                <div class="col">
+                    <button id="btnDisplayMessage" class="btn btn-primary">Add</button>
+                </div>
             </div>
-            <div class="mt-5">
-                <button id="btnDisplayMessage" class="btn btn-primary">Display Message</button>
-            </div>
-            <div id="results" class="message mt-5">
-                <!-- My message will go here -->
+
+            <div class="message mt-5">
+                <ol id="results" class="list-group list-group-numbered">
+                    <!-- My items will go here -->
+                </ol>
             </div>
         </div>
     </main>
