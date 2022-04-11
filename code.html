@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
-                <img src="/img/nelsonTheDevTransparent250pxX88px.png" height="32" alt=""> APP NAME</a>
+                <img src="/img/nelsonTheDevTransparent250pxX88px.png" height="32" alt="">&nbsp; APP NAME</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,13 +66,46 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <h1>THE CODE For App Name</h1>
+            <h1 class="form-label">THE CODE For App Name</h1>
             <div class="row">
-                <div class="col">
-
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers">
+                        <code class="language-javascript">
+                            // Step One, get the information (controller, accept requests)
+                            function getMessage() {
+                                let msg = document.getElementById("txtMessage").value;
+                            
+                                displayMessage(msg);
+                            }
+                            
+                            
+                            
+                            // Final Step, display the information (view, displays stuff on screen)
+                            function displayMessage(message) {
+                            
+                                // first get the ol element from the page
+                                element = document.getElementById("results");
+                            
+                                // next create a new li element
+                                let item = document.createElement("li");
+                            
+                                // add classes to li element
+                                item.classList.add("list-group-item");
+                            
+                                // set the message for the li element
+                                item.innerHTML = message;
+                            
+                                element.appendChild(item);
+                            }
+                        </code>
+                    </pre>
                 </div>
-                <div class="col">
-
+                <div class="col-12 col-lg-4">
+                    <p>The code is structured in two functions</p>
+                    <h5>getMessage</h5>
+                    <p>Gets values from the user</p>
+                    <h5>btnDisplayMessage</h5>
+                    <p>Displays the items on the page</p>
                 </div>
             </div>
         </div>
@@ -115,7 +148,7 @@
             'right-trim': true
         })
     </script>
-    
+
 </body>
 
 </html>

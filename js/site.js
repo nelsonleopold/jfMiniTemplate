@@ -1,18 +1,18 @@
 // Step One, get the information (controller, accept requests)
 function getMessage() {
+
     let msg = document.getElementById("txtMessage").value;
 
     displayMessage(msg);
+    
+    // this clears the input field after it's displayed
+    document.getElementById("txtMessage").value = '';
 }
 
 
 
 // Final Step, display the information (view, displays stuff on screen)
 function displayMessage(message) {
-
-
-    // Bootstrap numbered list format: <li class="list-group-item">A list item</li>
-    // let item = `<li class="list-group-item">${message}</li>`;
 
     // first get the ol element from the page
     element = document.getElementById("results");
